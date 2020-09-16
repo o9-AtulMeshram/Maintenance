@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>o9 | Site under maintenance</title>
+    <meta
+      name="description"
+      content="We’re undergoing a bit of scheduled maintenance."
+    />
+    <meta name="keywords" content="o9, maintenance, back, up, site, down" />
+    <meta name="author" content="Atul Meshram" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="fonts/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <style>
+      @font-face {
+        font-family: "o9_sansblack";
+        src: url("./assets/o9sans-black-webfont.woff2") format("woff2"),
+          url("./assets/o9sans-black-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "o9_sanslight";
+        src: url("./assets/o9sans-light-webfont.woff2") format("woff2"),
+          url("./assets/o9sans-light-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "o9_sansregular";
+        src: url("./assets/o9sans-regular-webfont.woff2") format("woff2"),
+          url("./assets/o9sans-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "o9_sansregular", sans-serif;
+        min-height: 100vh;
+        color: #fff;
+        background-color: #000;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      .content {
+        padding: 10rem 10rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+      }
+
+      .content > article > h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        opacity: 1;
+        margin-top: 0;
+      }
+
+      .desc-first {
+        font-family: "o9_sanslight", sans-serif;
+        font-size: 1.8rem;
+        color: #fff;
+        opacity: 1;
+        margin: 2rem auto -1.25rem auto;
+      }
+
+      .desc-second {
+        font-family: "o9_sanslight", sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #fff;
+        opacity: 1;
+        margin: 3rem auto 0 auto;
+      }
+
+      .email {
+        font-family: "o9_sansregular", sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #fff;
+        opacity: 1;
+        margin: 1rem auto 0 auto;
+      }
+
+      .logo {
+        position: absolute;
+        bottom: 2rem;
+        right: 2.5rem;
+      }
+
+      .wrapper {
+        /* position: absolute; */
+        width: 22.5rem;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .loader {
+        height: 100%;
+        display: flex;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      .loader div {
+        flex: 1;
+        background: #fff;
+        -webkit-animation: go 0.8s infinite alternate ease;
+        animation: go 0.8s infinite alternate ease;
+        /* box-shadow: 0 0 20px #FFFFFF; */
+      }
+      .loader div:nth-child(1) {
+        -webkit-animation-delay: -0.72s;
+        animation-delay: -0.72s;
+      }
+      .loader div:nth-child(2) {
+        -webkit-animation-delay: -0.64s;
+        animation-delay: -0.64s;
+      }
+      .loader div:nth-child(3) {
+        -webkit-animation-delay: -0.56s;
+        animation-delay: -0.56s;
+      }
+      .loader div:nth-child(4) {
+        -webkit-animation-delay: -0.48s;
+        animation-delay: -0.48s;
+      }
+      .loader div:nth-child(5) {
+        -webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
+      }
+      .loader div:nth-child(6) {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+      .loader div:nth-child(7) {
+        -webkit-animation-delay: -0.24s;
+        animation-delay: -0.24s;
+      }
+      .loader div:nth-child(8) {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+      .loader div:nth-child(9) {
+        -webkit-animation-delay: -0.08s;
+        animation-delay: -0.08s;
+      }
+      .loader div:nth-child(10) {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+
+      @-webkit-keyframes go {
+        100% {
+          background: transparent;
+          flex: 10;
+          box-shadow: 0 0 0 transparent;
+        }
+      }
+
+      @keyframes go {
+        100% {
+          background: transparent;
+          flex: 10;
+          box-shadow: 0 0 0 transparent;
+        }
+      }
+
+      @media only screen and (min-device-width: 280px) and (max-device-width: 820px) {
+        .content {
+          padding: 2rem 1rem;
+        }
+
+        .content > article > h1 {
+          font-family: "o9_sansblack", sans-serif;
+          font-size: 1.5rem;
+        }
+
+        .desc-first {
+          font-size: 1.08rem;
+          margin: 5rem auto -2.5rem auto;
+        }
+
+        .desc-second {
+          font-size: 0.75rem;
+          line-height: 1rem;
+          margin: 1rem auto 0 auto;
+        }
+
+        .email {
+          font-size: 0.75rem;
+          line-height: 1rem;
+          margin: 1rem auto 0 auto;
+        }
+
+        .logo {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+        }
+
+        .wrapper {
+          /* position: absolute; */
+          width: 17.5rem;
+          height: 2px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="content">
+        <article>
+          <p class="desc-first">We are undergoing</p>
+          <h1>
+            Maintenance
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="70"
+              viewBox="0 0 100 68"
+              style="margin-left: 1rem"
+            >
+              <g id="large">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  d="M55.8 38.5l6.2-1.2c0-1.8-.1-3.5-.4-5.3l-6.3-.2c-.5-2-1.2-4-2.1-6l4.8-4c-.9-1.6-1.9-3-3-4.4l-5.6 3c-1.3-1.6-3-3-4.7-4.1l2-6A30 30 0 0 0 42 8l-3.3 5.4c-2-.7-4.2-1-6.2-1.2L31.3 6c-1.8 0-3.5.1-5.3.4l-.2 6.3c-2 .5-4 1.2-6 2.1l-4-4.8c-1.6.9-3 1.9-4.4 3l3 5.6c-1.6 1.3-3 3-4.1 4.7l-6-2A32.5 32.5 0 0 0 2 26l5.4 3.3c-.7 2-1 4.2-1.2 6.2L0 36.7c0 1.8.1 3.5.4 5.3l6.3.2c.5 2 1.2 4 2.1 6l-4.8 4c.9 1.6 1.9 3 3 4.4l5.6-3c1.4 1.6 3 3 4.7 4.1l-2 6A30.5 30.5 0 0 0 20 66l3.4-5.4c2 .7 4 1 6.1 1.2l1.2 6.2c1.8 0 3.5-.1 5.3-.4l.2-6.3c2-.5 4-1.2 6-2.1l4 4.8c1.6-.9 3-1.9 4.4-3l-3-5.6c1.6-1.3 3-3 4.1-4.7l6 2A32 32 0 0 0 60 48l-5.4-3.3c.7-2 1-4.2 1.2-6.2zm-13.5 4a12.5 12.5 0 1 1-22.6-11 12.5 12.5 0 0 1 22.6 11z"
+                />
+                <animateTransform
+                  attributeName="transform"
+                  begin="0s"
+                  dur="3s"
+                  from="0 31 37"
+                  repeatCount="indefinite"
+                  to="360 31 37"
+                  type="rotate"
+                />
+              </g>
+              <g id="small">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  d="M93 19.3l6-3c-.4-1.6-1-3.2-1.7-4.8L90.8 13c-.9-1.4-2-2.7-3.4-3.8l2.1-6.3A21.8 21.8 0 0 0 85 .7l-3.6 5.5c-1.7-.4-3.4-.5-5.1-.3l-3-5.9c-1.6.4-3.2 1-4.7 1.7L70 8c-1.5 1-2.8 2-3.9 3.5L60 9.4a20.6 20.6 0 0 0-2.2 4.6l5.5 3.6a15 15 0 0 0-.3 5.1l-5.9 3c.4 1.6 1 3.2 1.7 4.7L65 29c1 1.5 2.1 2.8 3.5 3.9l-2.1 6.3a21 21 0 0 0 4.5 2.2l3.6-5.6c1.7.4 3.5.5 5.2.3l2.9 5.9c1.6-.4 3.2-1 4.8-1.7L86 34c1.4-1 2.7-2.1 3.8-3.5l6.3 2.1a21.5 21.5 0 0 0 2.2-4.5l-5.6-3.6c.4-1.7.5-3.5.3-5.1zM84.5 24a7 7 0 1 1-12.8-6.2 7 7 0 0 1 12.8 6.2z"
+                />
+                <animateTransform
+                  attributeName="transform"
+                  begin="0s"
+                  dur="2s"
+                  from="0 78 21"
+                  repeatCount="indefinite"
+                  to="-360 78 21"
+                  type="rotate"
+                />
+              </g>
+            </svg>
+          </h1>
+
+          <div class="wrapper">
+            <div class="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <p class="desc-second">
+            Sorry for the inconvenience! <br />To contact us in the meantime
+            please email to:
+          </p>
+          <p class="email">admin@o9solutions.com</p>
+        </article>
+        <article class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+          >
+            <path
+              fill="#FFF"
+              fill-opacity="0.25"
+              d="M98,38.7496149 C98,47.8730838 93.2353408,55.8825841 88.7749058,61.3547111 L67.993852,86.6978251 L56.9437383,86.6978251 L78.8407152,61.0508126 C76.0102922,62.6930723 72.7862886,63.5340629 69.5143216,63.4836291 C62.8236691,63.4836291 57.3495878,61.5576358 53.0917518,58.3137719 C53.1785895,58.9859469 53.2124603,59.6639074 53.1930513,60.3413904 C53.1930513,76.3581108 43.1572354,87.9147219 27.6473382,87.9147219 C11.7315916,87.9147219 2,76.3581108 2,60.3413904 C2,44.2230448 11.7315916,32.7677332 27.6473382,32.7677332 C34.5405897,32.7677332 40.2175958,34.8966512 44.475106,38.6473382 C44.677705,23.9484884 55.524894,13 71.5425915,13 C88.1667832,13 98,24.1517389 98,38.7496149 Z M43.6640586,60.3420419 C43.6640586,48.5834832 38.4938758,40.0671598 27.6473382,40.0671598 C16.6988498,40.0671598 11.5286669,48.582506 11.5286669,60.3420419 C11.5286669,72.2025515 16.6988498,80.6162725 27.6473382,80.6162725 C38.4938758,80.6162725 43.6640586,72.2025515 43.6640586,60.3420419 Z M88.7765345,38.7496149 C88.7765345,28.8150986 82.6943304,20.2994266 71.543243,20.2994266 C60.493455,20.2994266 54.0057273,28.8147728 54.0057273,39.0535134 C54.0057273,49.0893292 60.1895565,57.300777 71.340644,57.300777 C82.2871781,57.300777 88.7749058,48.4812065 88.7749058,38.7496149 L88.7765345,38.7496149 Z"
+            />
+          </svg>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
